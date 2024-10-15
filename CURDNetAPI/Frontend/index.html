@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý học sinh, giáo viên và Lớp</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Liên kết tới file CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/app.js" defer></script> <!-- Liên kết tới file JavaScript -->
+</head>
+<body>
+    <h1>Quản lý học sinh, giáo viên và Lớp</h1>
+
+    <!-- Danh sách giáo viên -->
+    <h2>Danh sách giáo viên</h2>
+    <ul id="teacherList"></ul>
+
+    <!-- Thêm, Sửa giáo viên -->
+    <div class="form-section">
+        <h2>Thêm giáo viên</h2>
+        Nhập tên giáo viên: <input type="text" id="teacherName" placeholder="Tên giáo viên" /><br />
+        Nhập email: <input type="text" id="teacherEmail" placeholder="Email giáo viên" /><br />
+        <button id="addTeacher">Thêm giáo viên</button>
+        <br />
+        <h2>Sửa giáo viên</h2>
+        Chọn giáo viên muốn sửa: <select id="teacherSelect"></select><br />
+       Nhập tên mới: <input type="text" id="updateteacherName" placeholder="Tên giáo viên mới" /><br />
+        Nhập email mới: <input type="text" id="updateteacherEmail" placeholder="Email giáo viên mới" /><br />
+        <button id="editTeacher">Sửa giáo viên</button>
+    </div>
+
+
+    <!-- Danh sách học sinh -->
+    <h2>Danh sách học sinh</h2>
+    <ul id="studentList"></ul>
+
+
+    <!-- Thêm, Sửa học sinh -->
+    <div class="form-section">
+        <h2>Thêm học sinh</h2>
+        Nhập tên học sinh: <input type="text" id="studentName" placeholder="Tên học sinh" /><br />
+        Nhập email: <input type="text" id="studentEmail" placeholder="Email học sinh" /><br />
+        Chọn lớp: <select id="studentClassId"></select><br />
+        <button id="addStudent">Thêm học sinh</button>
+        <h2>Sửa học sinh</h2>
+        Chọn học sinh muốn sửa: <select id="studentSelect"></select><br />
+        Nhập tên mới: <input type="text" id="updatestudentName" placeholder="Tên học sinh mới" /><br />
+        Nhập email mới: <input type="text" id="updatestudentEmail" placeholder="Email học sinh mới" /><br />
+        Chọn lớp mới<select id="updatestudentClassId"></select><br />
+        <button id="editStudent">Sửa học sinh</button>
+    </div>
+
+
+    <!-- Danh sách Lớp -->
+    <h2>Danh sách Lớp</h2>
+    <ul id="classList"></ul>
+
+    <!-- Thêm sửa Lớp -->
+    <div class="form-section">
+        <h2>Thêm Lớp</h2>
+        Nhập tên lớp: <input type="text" id="className" placeholder="Tên Lớp" /><br />
+        Chọn giáo viên<select id="classTeacherId"></select><br />
+        <button id="addClass">Thêm Lớp</button>
+        <h2>Sửa lớp</h2>
+        Chọn lớp cần sửa: <select id="classSelect"></select><br />
+        Nhập tên lớp mới: <input type="text" id="updateclassName" placeholder="Tên Lớp mới" /><br />
+        Chọn giáo viên: <select id="updateclassTeacherId"></select><br />
+        <button id="editClass">Sửa Lớp</button>
+    </div>
+
+</body>
+</html>
